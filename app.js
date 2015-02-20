@@ -11,6 +11,6 @@ app.get('/', function(req, res) {
 //use heroku's port if it is specified.
 //otherwise use our own local port.
 var port = process.env.PORT || 9439;
-var server = app.listen(9439, function() {
+var server = app.listen(port, function() {
 	console.log('Express server listening on port ' + server.address().port);
 });
